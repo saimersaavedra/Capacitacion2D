@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class MovimientoPlayer : MonoBehaviour
@@ -28,7 +29,7 @@ public class MovimientoPlayer : MonoBehaviour
 
     [Header("Vida")]
 
-    [SerializeField] private int vida = 10;
+    [SerializeField] private Slider vida;
 
     private void Start()
     {
@@ -44,7 +45,7 @@ public class MovimientoPlayer : MonoBehaviour
         {
             salto = true;
         }
-        if(vida <= 0)
+        if(vida.value <= 0)
         {
             Destroy(gameObject);
         }
@@ -79,6 +80,7 @@ public class MovimientoPlayer : MonoBehaviour
         {
             enSuelo = false;
             rb2D.AddForce(new Vector2(0f, JumpForce));
+            
         }
     }
 
@@ -94,7 +96,7 @@ public class MovimientoPlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Daño")
         {
-            vida -= 2;
+            vida.value -= 0.5f;
         }
     }
     private void OnDrawGizmos()
