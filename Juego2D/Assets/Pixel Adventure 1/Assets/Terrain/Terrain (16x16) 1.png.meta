@@ -43,11 +43,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 128
-        width: 47
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -129,9 +129,9 @@ TextureImporter:
       name: Block
       rect:
         serializedVersion: 2
-        x: 95
+        x: 100
         y: 128
-        width: 48
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -236,8 +236,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 80
-        height: 48
+        width: 48
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,9 +255,9 @@ TextureImporter:
       name: Terrain (16x16) 1_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 64
-        width: 80
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -277,9 +277,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 94
+        y: 96
         width: 48
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,7 +299,7 @@ TextureImporter:
         serializedVersion: 2
         x: 272
         y: 64
-        width: 80
+        width: 48
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -318,9 +318,9 @@ TextureImporter:
       name: Terrain (16x16) 1_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 80
+        width: 46
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -339,9 +339,9 @@ TextureImporter:
       name: Terrain (16x16) 1_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 48
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -423,10 +423,10 @@ TextureImporter:
       name: Terrain (16x16) 1_14
       rect:
         serializedVersion: 2
-        x: 151
-        y: 145
-        width: 17
-        height: 16
+        x: 144
+        y: 144
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,6 +436,132 @@ TextureImporter:
       bones: []
       spriteID: d19bf662d281d5b40bee786b5dc7e8eb
       internalID: 1101436465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e078d18e3671d9442b4514a985294dc3
+      internalID: 2025025375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f7e12047228d246b944a1499c50191
+      internalID: -102017812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37b9f1e40cc38548a331da8031da0ac
+      internalID: -127854886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7232b792f09217148882b480f8224042
+      internalID: -1765170445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39aa699618ae144803c1f4282be703
+      internalID: 2115895049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_20
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 130
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054583cb311100c4f85ea845e4ab0cbe
+      internalID: 1696368710
       vertices: []
       indices: 
       edges: []
@@ -459,7 +585,13 @@ TextureImporter:
       Terrain (16x16) 1_12: 1013977107
       Terrain (16x16) 1_13: -1296080520
       Terrain (16x16) 1_14: 1101436465
+      Terrain (16x16) 1_15: 2025025375
+      Terrain (16x16) 1_16: -102017812
+      Terrain (16x16) 1_17: -127854886
+      Terrain (16x16) 1_18: -1765170445
+      Terrain (16x16) 1_19: 2115895049
       Terrain (16x16) 1_2: 1782589949
+      Terrain (16x16) 1_20: 1696368710
       Terrain (16x16) 1_3: 1991147629
       Terrain (16x16) 1_4: -1002161504
       Terrain (16x16) 1_5: -2098404557
