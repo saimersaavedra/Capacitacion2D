@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class MovimientoPlayer : MonoBehaviour
@@ -24,17 +25,46 @@ public class MovimientoPlayer : MonoBehaviour
     [SerializeField] private bool enSuelo;
     private bool salto = false;
 
+
+    [Header("Rebote")]
+    [SerializeField] private float velocidadRebote;
+
+
     [Header("Animacion")]
     private Animator animator;
 
     [Header("Vida")]
 
-    [SerializeField] private Slider vida;
+    public Slider VidaSlider;
+    /* Vida a través de texto
+    [SerializeField] private TextMeshProUGUI VidaText;
+    [SerializeField] private int vida = 100;
+    */
+    /* Vida a través de imagen/sprite
+    [SerializeField] private Image Corazon;
+    [SerializeField] private int CantCorazon;
+    [SerializeField] private RectTransform PosicionCorazon;
+    [SerializeField] private Canvas MyCanvas;
+    [SerializeField] private int OffSet;
+    */
+
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+    /*
+        Transform PosCorazon = PosicionCorazon;
+        for (int i = 0; i < CantCorazon; i++) {
+            Image NewCorazon = Instantiate(Corazon, 
+                PosCorazon.position, Quaternion.identity);
+            NewCorazon.transform.parent = MyCanvas.transform;
+            PosCorazon.position = new 
+                Vector2(PosCorazon.position.x + OffSet, 
+                PosCorazon.position.y);
+        }
+        VidaText.text = "" + vida;
+    */
     }
     private void Update()
     {
@@ -45,10 +75,13 @@ public class MovimientoPlayer : MonoBehaviour
         {
             salto = true;
         }
-        if(vida.value <= 0)
+        //    VidaText.text = "" + vida;
+
+        if(VidaSlider.value <= 0)
         {
             Destroy(gameObject);
         }
+
     }
 
     private void FixedUpdate()
@@ -92,12 +125,23 @@ public class MovimientoPlayer : MonoBehaviour
         transform.localScale = escala;
     }
 
+    public void DanoVida(int dano)
+    {
+        //  vida -= dano;
+        VidaSlider.value -= dano;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Daño")
         {
-            vida.value -= 0.5f;
+            //  Destroy(MyCanvas.transform.GetChild(CantCorazon + 1).gameObject);
+            //  CantCorazon -= 1;
+            VidaSlider.value -= 10;
         }
+    }
+    public void Rebote()
+    {
+        rb2D.velocity = new Vector2(rb2D.velocity.x, velocidadRebote);
     }
     private void OnDrawGizmos()
     {

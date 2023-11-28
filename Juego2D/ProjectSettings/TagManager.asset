@@ -54,3 +54,6 @@ TagManager:
   - name: Plataforma
     uniqueID: 3812440569
     locked: 0
+  - name: Enemigo
+    uniqueID: 154535297
+    locked: 0
